@@ -6,11 +6,8 @@ export function Home() {
   
 
   return (
-    <div className={`${style.home}`}>
-        <header>
-          <NavBar/>
-        </header>
-       
+    <div className={style.home}>
+      <NavBar/>
     </div>
    
   )
