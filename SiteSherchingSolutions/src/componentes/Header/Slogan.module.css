@@ -1,0 +1,28 @@
+.slogan{
+    color: #ffffff;
+}
+
+
+.textPrimary{
+    margin-top: 12.5rem;
+    font-size: 3rem;
+    text-decoration: none;
+    font-weight: 200;
+}
+
+.slogan span{
+    color:#0017E8;
+    font-weight: 300;
+}
+
+.vector{
+    margin-top: -5.2rem;
+    padding-left: 21rem;
+    height: 0.9rem;
+}
+
+.textSegundary{
+    font-weight: 200;
+    font-size: 2rem;
+    line-height: 1;
+}
