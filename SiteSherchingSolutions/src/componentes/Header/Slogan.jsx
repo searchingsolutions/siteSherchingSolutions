@@ -1,29 +1,30 @@
 import style from './Slogan.module.css'
 import vector from '../../assets/risco.svg'
+import Button from '../../layout/Button'
+import { FaArrowRight } from "react-icons/fa";
 
 function Slogan() {
-    return(
-        <div className={`container text-center ${style.slogan}`}>
+    return (
+        <section className={`container text-center ${style.slogan}`}>
             <p className={style.textPrimary}>
-                Desenhando Ideias,
-                <br/>
-                Programando <span>possibilidades.</span>
-                <div>
-                    <img src={vector} alt="vector" className={`${style.vector}`} />
-                </div>
-            </p>
-            <div className='col-10 offset-1'>
-                <p className={`${style.textSegundary}`}>
-                Descubra como nossas soluções 
-                <br/>
-                personalizadas podem transforma
-                <br/>
-                os processos e os resultados da sua empresa.
+                Desenhando Ideias, Programando
+                <span>
+                    possibilidades
+                    <img src={vector} alt="vector" className={style.vector} />
+                </span>
             </p>
 
-            </div>
-            
-        </div>
+            <p className={style.textSegundary}>
+                Descubra como nossas soluções 
+                personalizadas podem transforma
+                os processos e os resultados da sua empresa.
+            </p>
+           
+            <Button className="bg-black text-light mt-5 align-items-center">
+                Entrar em contato
+                <span className='ps-2 text-light'><FaArrowRight/></span>
+            </Button>
+        </section>
     )
 }
 

@@ -5,7 +5,7 @@ import Router from './router.jsx'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode className="container">
+  <StrictMode>
     <Router />
-  </StrictMode>,
+  </StrictMode>
 )
