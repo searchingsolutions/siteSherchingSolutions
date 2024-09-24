@@ -7,6 +7,6 @@
 .navBar a:hover{
     background-color: rgba(43, 0, 235, 0.322);
     border-radius: 20px;
-    box-shadow: 0px 0px 30px rgba(43, 0, 235, 0.829); /* Sombra */
+    box-shadow: 0px 0px 30px rgba(43, 0, 235, 0.829); 
 }
 
