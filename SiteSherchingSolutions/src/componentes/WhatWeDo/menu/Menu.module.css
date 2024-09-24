@@ -1,0 +1,36 @@
+.menu{
+    background-color: black;
+    max-width: 720px;
+    height: 56px;
+    border-radius: 1rem;
+    margin: 3rem auto;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    padding: 10px 1rem;
+    align-items: center;
+}
+
+.weDo{
+    background-color: black;
+    border: none;
+    font-weight: 100;
+    color: #ffffff9c;
+}
+
+.menu button:hover {
+    color: #ffffff;
+    font-weight: 200;
+    text-decoration: underline;
+    padding-bottom:1px ;
+}
+
+.weDoEscolha{
+    background-color: #4242cf50;
+    border: none;
+    font-weight: 200;
+    color: #ffffff;
+    text-decoration: underline;
+    text-decoration-thickness:0.125;
+    text-underline-offset: 0.4rem;
+}

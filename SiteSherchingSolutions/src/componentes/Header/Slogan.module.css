@@ -36,6 +36,11 @@
 }
 
 .btnContato {
-    background-color: black;
+    background-color:  #00008B;
+    color: #ffffff;
+}
+
+.btnContato:hover {
+    background-color: #0000f1;
     color: #ffffff;
 }

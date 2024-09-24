@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.consultoria{
+    background-color: #010035;
+    display: flex;
+    justify-content: center;
+}
+
+.imgConsultoria{
+    width: 566px;
+    height: 519px;
+
+}
+
+.txtConsultoria{
+    width: 440px;
+    height: 519px;
+    padding: 4.5rem 0px;
+    text-align: start;
+}
+
+.txtConsultoria h1{
+    font-size: 24px;
+}
+
+.txtConsultoria h2{
+    margin-top: 1rem;
+    font-size: 28px;
+    font-weight: 100;
+    max-width: 330px;
+}
+
+.txtConsultoria p{
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    font-weight: 100;
+    max-width: 345px;
+}
+
+.btnSaibaMais{
+    background-color: #00008B;
+    color: #ffffff;
+    max-width: 122px;
+    height: 35px;
+    font-size: 1rem;
+    font-family: "Inter", sans-serif;
+}
