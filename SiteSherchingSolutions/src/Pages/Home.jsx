@@ -7,9 +7,11 @@ export function Home() {
   
 
   return (
-    <div className={style.home}>
-        <NavBar/>
-        <Slogan/>
+    <div className={`${style.home}`}>
+        <header>
+          <NavBar/>
+        </header>
+       
     </div>
    
   )
