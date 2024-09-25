@@ -1,4 +1,4 @@
-import { useState } from "react"
+import {  useState } from "react"
 import Consultoria from "../Options/consultoria/Consultoria"
 import style from "./Menu.module.css"
 import Sistemas from "../Options/Sistemas/Sistemas"
@@ -7,34 +7,31 @@ import LandingPages from "../Options/Landing Pages/LandingPages"
 import UxUI from "../Options/UX-UI/UxUI"
 
 export function Menu() {
-    const [escolha, setEscolha] = useState(0)
+    const [escolha, setEscolha] = useState("Consultoria")
+    const tabs = {
+        Consultoria: <Consultoria/>,
+        Sistemas:  <Sistemas/>,
+        BancoDeDados: <BancoDeDados/>,
+        LangingPages: <LandingPages/>,
+        UxUi: <UxUI/>
+    }
 
-
+      
     return(
         <section>
             <div className={style.menu}>
-                <button onClick={() => setEscolha(0)} className={ escolha == 0 ? style.weDoEscolha : style.weDo}>Consutoria</button>
-                <button onClick={() => setEscolha(1)} className={ escolha == 1 ? style.weDoEscolha : style.weDo}>Sistemas</button>
-                <button onClick={() => setEscolha(2)} className={ escolha == 2 ? style.weDoEscolha : style.weDo}>Banco de Dados</button>
-                <button onClick={() => setEscolha(3)} className={ escolha == 3 ? style.weDoEscolha : style.weDo}>Landing Pages</button>
-                <button onClick={() => setEscolha(4)} className={ escolha == 4 ? style.weDoEscolha : style.weDo}>UX/UI</button>
+                {
+                    Object.keys(tabs).map((tab, index) => (
+                        <button key={index} onClick={() => setEscolha(tab)} className={escolha === tab ? style.weDoEscolha : style.weDo}>
+                            {tab}
+                        </button>
+                    ))
+                }
             </div>
-           {
-            escolha == 0?(
-                <Consultoria/>
-            ):escolha ==1?(
-                <Sistemas/>
-            ):escolha ==2?(
-                <BancoDeDados/>
-            ):escolha ==3?(
-                <LandingPages/>
-            ):escolha ==4?(
-                <UxUI/>
-            ):<></>
-           }
-        </section>
-        
 
+           {tabs[escolha]}
+
+        </section>
     )
 }
 
