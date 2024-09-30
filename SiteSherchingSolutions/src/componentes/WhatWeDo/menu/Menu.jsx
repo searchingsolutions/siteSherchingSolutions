@@ -1,19 +1,15 @@
 import {  useState } from "react"
-import Consultoria from "../Options/consultoria/Consultoria"
 import style from "./Menu.module.css"
-import Sistemas from "../Options/Sistemas/Sistemas"
-import BancoDeDados from "../Options/BancoDeDados/BancoDeDados"
-import LandingPages from "../Options/Landing Pages/LandingPages"
-import UxUI from "../Options/UX-UI/UxUI"
+import Options from "../Options/Options"
 
 export function Menu() {
     const [escolha, setEscolha] = useState("Consultoria")
     const tabs = {
-        Consultoria: <Consultoria/>,
-        Sistemas:  <Sistemas/>,
-        BancoDeDados: <BancoDeDados/>,
-        LangingPages: <LandingPages/>,
-        UxUi: <UxUI/>
+        Consultoria: 0,
+        Sistemas:  1,
+        BancoDeDados: 2,
+        LangingPages: 3,
+        UxUi: 4
     }
 
       
@@ -29,7 +25,8 @@ export function Menu() {
                 }
             </div>
 
-           {tabs[escolha]}
+           {<Options optionSelected={tabs[escolha]}/>}
+           {console.log(tabs[escolha])}
 
         </section>
     )
