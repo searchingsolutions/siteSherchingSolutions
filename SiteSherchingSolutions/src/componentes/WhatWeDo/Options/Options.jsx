@@ -7,6 +7,7 @@ import Button from "../../../componentes/Button/Button"
 import style from "./Options.module.css"
 import { useState, useEffect } from "react"
 
+// eslint-disable-next-line react/prop-types
 function Options({optionSelected}) {
 
     const [option, setOption] = useState(optionSelected)

@@ -18,7 +18,7 @@ function NavBar() {
                 </div>
 
                 <div className="col-2">
-                    <button className={style.buttonContato}>Contato</button>
+                    <button className={style.btnContato}>Contato</button>
                 </div>
             </nav>
         </header>

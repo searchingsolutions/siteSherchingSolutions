@@ -44,3 +44,8 @@
     font-size: 1rem;
     font-family: "Inter", sans-serif;
 }
+
+.btnSaibaMais:hover {
+    background-color: #0000f1;
+    
+}
