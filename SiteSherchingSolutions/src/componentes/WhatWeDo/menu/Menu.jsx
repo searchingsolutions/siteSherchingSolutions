@@ -26,8 +26,7 @@ export function Menu() {
             </div>
 
            {<Options optionSelected={tabs[escolha]}/>}
-           {console.log(tabs[escolha])}
-
+           
         </section>
     )
 }
