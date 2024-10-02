@@ -1,3 +1,4 @@
+import Footer from '../componentes/Footer/Footer'
 import Slogan from '../componentes/Header/Slogan'
 import NavBar from '../componentes/navBar/NavBar'
 import OurProjects from '../componentes/OurProjects/ComponentePrincipal/OurProjects'
@@ -14,6 +15,7 @@ export function Home() {
       <Slogan/>
       <WhatWeDo/>
       <OurProjects/>
+      <Footer/>
     </div>
    
   )

@@ -4,6 +4,7 @@ import style from "./Card.module.css"
 import { FaArrowRightLong } from "react-icons/fa6";
 
 
+
 function Card() {
     return(
         <div className={style.card}>
@@ -18,7 +19,6 @@ function Card() {
                     <FaArrowRightLong/>
                 </Button>
             </div>
-            
         </div>
     )
 }

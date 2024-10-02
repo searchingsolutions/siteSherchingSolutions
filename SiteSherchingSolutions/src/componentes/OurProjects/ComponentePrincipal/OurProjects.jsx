@@ -4,7 +4,7 @@ import styles from "./OurProjects.module.css"
 
 function OurProjects() {
     return(
-        <section>
+        <section className={styles.sectionContainer}>
             <Button className={styles.btnNossosProjetos}>
                 Nossos projetos
             </Button>
@@ -14,10 +14,9 @@ function OurProjects() {
                 <Card/>
             </div>
 
-            <Button className={`${styles.btnVerMais}`} >
+            <Button className={styles.btnVerMais} >
                 Ver Mais
             </Button>
-             
         </section>
     )
 }
