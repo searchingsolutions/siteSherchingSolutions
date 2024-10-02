@@ -28,10 +28,10 @@ function Footer() {
                 </div>
 
                 <div className={style.contacts}>
-                    <Button>
+                    <Button className={style.btnContacts}>
                         @seachingsolutions
                     </Button>
-                    <Button>
+                    <Button className={style.btnContacts}>
                         Entrar em contato <FaArrowRight/>
                     </Button>
                 </div>

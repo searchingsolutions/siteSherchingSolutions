@@ -24,11 +24,12 @@
 .links a {
     text-decoration: none;
     color: #ffffff;
+    font-weight: 200;
 }
 
-.links a {
-    text-decoration: none;
-    color: #ffffff;
+.links a:hover {
+    font-weight: 500;
+    color: #f1f1f1;
 }
 
 .socialMedia {
@@ -49,6 +50,31 @@
     align-items: center;   
 }
 
+.socialMedia span:nth-child(1):hover {
+    background: radial-gradient(circle at 30% 30%, #bc1888, #cc2366, #dc2743, #e6683c, #f09433);
+    color:#ffffff      
+}
+
+.socialMedia span:nth-child(2):hover {
+    background: linear-gradient(45deg, #128C7E, #25D366);
+    color:#ffffff      
+}
+
+.socialMedia span:nth-child(3):hover {
+    background-color: #1877F2;
+    color:#ffffff      
+}
+
+.socialMedia span:nth-child(4):hover {
+    background-color: #0A66C2;
+    color:#ffffff      
+}
+
+.socialMedia span:nth-child(5):hover {
+    background-color: #1769FF;  
+    color:#ffffff      
+}
+
 .contacts {
     display: grid;
     gap: 1rem;
@@ -56,5 +82,10 @@
 
 .btnContacts {
     max-width: 190px;
+}
+
+.btnContacts:hover {
+    background-color: #0000F1;
+    color: #ffffff;
 }
 

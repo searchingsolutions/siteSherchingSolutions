@@ -16,6 +16,13 @@
     padding: 0;            
 }
 
+.btnSeta:hover {
+     
+    background-color: #ffffff;
+    color: #000000;
+         
+}
+
 .imgCard{
     margin: 28px 28px 0px;
 }
