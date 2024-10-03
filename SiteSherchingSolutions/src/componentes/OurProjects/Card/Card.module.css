@@ -1,8 +1,12 @@
-.card{
+.card {
     background: linear-gradient(270.5deg, rgba(0, 25, 255, 0.25) -22.46%, rgba(13, 13, 13, 0.25) 122.58%);
     max-width: 456px;
     height: 294px;
     border-radius: 22px;
+}
+
+.card:hover {
+    background: linear-gradient(270.5deg, rgba(13, 13, 13, 0.25) -22.46%, rgba(0, 25, 255, 0.25) 122.58%);
 }
 
 .btnSeta {
@@ -17,10 +21,8 @@
 }
 
 .btnSeta:hover {
-     
     background-color: #ffffff;
     color: #000000;
-         
 }
 
 .imgCard{

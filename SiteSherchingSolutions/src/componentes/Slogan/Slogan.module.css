@@ -32,15 +32,36 @@
     font-size: 2rem;
     line-height: 1;
     max-width: 763px;
-    
 }
 
 .btnContato {
     background-color:  #00008B;
     color: #ffffff;
+    margin-top: 3rem;
 }
 
 .btnContato:hover {
     background-color: #0000f1;
     color: #ffffff;
+}
+
+@media (max-width: 600px) {
+    
+    .textPrimary {
+        font-size: 1rem;
+        max-width: 353px;
+        margin-top: 3rem;
+    }
+
+    .textSegundary {
+        font-size: 13px;
+        line-height: 1;
+        max-width: 292px;
+    }
+
+    .btnContato {
+        max-width: 140px;
+        font-size: 0.8rem;
+        margin-top: 1rem;
+    }
 }

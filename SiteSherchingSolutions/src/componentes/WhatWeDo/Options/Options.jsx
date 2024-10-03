@@ -58,11 +58,9 @@ function Options({optionSelected}) {
             subTitle: "Nossa equipe conta com profissionais qualificados para atender a todos os públicos.",
             body: "Adquirindo qualquer um de nossos serviços, você contará com profissionais qualificados na área de UX/UI, proporcionando qualidade, acessibilidade e facilidade para todos os seus clientes e funcionários."
         }
-
     ]
     
-      
-
+    
     return(
         <div className={style.options}>
             <figure>

@@ -1,5 +1,5 @@
 import Footer from '../componentes/Footer/Footer'
-import Slogan from '../componentes/Header/Slogan'
+import Slogan from '../componentes/Slogan/Slogan'
 import NavBar from '../componentes/navBar/NavBar'
 import OurProjects from '../componentes/OurProjects/ComponentePrincipal/OurProjects'
 import WhatWeDo from '../componentes/WhatWeDo/ComponentePrincipal/WhatWeDo'
