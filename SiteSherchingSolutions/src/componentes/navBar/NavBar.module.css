@@ -10,3 +10,11 @@
     box-shadow: 0px 0px 30px rgba(43, 0, 235, 0.829); 
 }
 
+.buttonContato {
+    background-color: #f1f1f1;
+    color: black;
+    border: none ;
+    border-radius: 1rem ;
+    padding: 6px 12px;
+}
+

@@ -4,8 +4,8 @@
   box-sizing: border-box;
 }
 
-body{
-  background-color:  #010035;
+body {
+  background-color:  #010035 !important ;
   font-family: "Poppins" !important; 
   color: #ffffff !important;
 }

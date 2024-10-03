@@ -1,7 +1,6 @@
 import style from './Slogan.module.css'
 import vector from '../../assets/risco.svg'
-import Button from '../../layout/Button'
-import { FaArrowRight } from "react-icons/fa";
+import Button from '../Button/Button'
 
 function Slogan() {
     return (
@@ -20,9 +19,8 @@ function Slogan() {
                 os processos e os resultados da sua empresa.
             </p>
            
-            <Button className="bg-black text-light mt-5 align-items-center">
+            <Button className={`${style.btnContato} mt-5 align-items-center`}>
                 Entrar em contato
-                <span className='ps-2 text-light'><FaArrowRight/></span>
             </Button>
         </section>
     )

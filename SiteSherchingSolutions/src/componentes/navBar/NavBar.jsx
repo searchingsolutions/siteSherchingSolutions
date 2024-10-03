@@ -17,8 +17,8 @@ function NavBar() {
                     </div>
                 </div>
 
-                <div className='col-2 text-end'>
-                    <a href="" >Contato</a>
+                <div className="col-2">
+                    <button className={style.buttonContato}>Contato</button>
                 </div>
             </nav>
         </header>

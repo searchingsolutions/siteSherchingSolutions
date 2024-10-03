@@ -1,0 +1,13 @@
+.whatWeDo {
+    background-color: #ffffff10;
+    color: #ffffff;
+  
+}
+
+.whatWeDo:hover {
+    cursor: default;
+}
+
+.sectionWhatWeDo { 
+    margin-top: 5rem;
+}
