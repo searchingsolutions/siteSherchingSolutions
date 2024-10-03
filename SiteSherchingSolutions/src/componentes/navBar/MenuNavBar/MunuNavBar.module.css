@@ -1,0 +1,14 @@
+.btnContato {
+    background-color: #f1f1f1;
+    color: black;
+    border: none ;
+    border-radius: 1rem ;
+    padding: 6px 12px;
+}
+
+.btnContato:hover {
+    background-color: #000000;
+    color: #f1f1f1;
+    border: 1px solid white ;
+}
+

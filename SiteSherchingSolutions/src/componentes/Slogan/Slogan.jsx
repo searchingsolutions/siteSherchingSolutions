@@ -19,7 +19,7 @@ function Slogan() {
                 os processos e os resultados da sua empresa.
             </p>
            
-            <Button className={`${style.btnContato} mt-5 align-items-center`}>
+            <Button className={`${style.btnContato} align-items-center`}>
                 Entrar em contato
             </Button>
         </section>

@@ -1,0 +1,38 @@
+.btnNossosProjetos {
+    max-width: 154px;
+    height: 36px;
+    background-color: #ffffff10;
+    color: #ffffff;   
+}
+
+.btnNossosProjetos:hover {
+    cursor: default;
+}
+
+.sectionContainer{
+    position: relative;
+    max-width: 960px;
+    margin: auto;
+}
+
+.btnVerMais {
+    margin-top: 15px;
+    position: absolute;
+    right: 20px;
+    background-color: #000000;
+    color: #ffffff;
+    max-width: 93px;
+    height: 26px;
+    font-size: 15px;
+    font-weight: 100;
+}
+
+.btnVerMais:hover {
+    color: #000000; 
+    background-color: #ffffff; 
+    font-weight: 300;  
+}
+
+
+
+

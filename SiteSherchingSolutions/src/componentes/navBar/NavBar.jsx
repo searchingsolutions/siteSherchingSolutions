@@ -1,25 +1,24 @@
 import logo from '../../assets/logo.svg'
+import MenuNavBar from './MenuNavBar/MenuNavBar';
 import style from './NavBar.module.css'
+import { GiHamburgerMenu } from "react-icons/gi";
 
 function NavBar() {
     return (
         <header>
-            <nav className={`${style.navBar} container pt-5 d-flex text-center align-items-center `}>
+            <nav className={`${style.navBar} container d-flex align-items-center`}>
                 <div className='col-2'>
                     <img src={logo} alt="" className='w-100' />
                 </div>
                 
-                <div className='col-8 d-flex text-center'>
-                    <div className='col-10 offset-1'>
-                        <a href="" className='col-2'>Serviços</a>
-                        <a href="" className='col-2 offset-1'>Projetos</a>
-                        <a href="" className='col-2 offset-1'>Sobre nós</a>
-                    </div>
+                <div className="d-none d-md-grid">
+                    <MenuNavBar/>
+                </div>
+                
+                <div className='d-grid d-md-nome position-fixed end-0' >
+                    <GiHamburgerMenu/>
                 </div>
 
-                <div className="col-2">
-                    <button className={style.buttonContato}>Contato</button>
-                </div>
             </nav>
         </header>
     )

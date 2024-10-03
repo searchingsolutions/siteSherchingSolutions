@@ -1,4 +1,4 @@
-import {  useState } from "react"
+import {  useState, useEffect } from "react"
 import style from "./Menu.module.css"
 import Options from "../Options/Options"
 
@@ -12,7 +12,21 @@ export function Menu() {
         UxUi: 4
     }
 
+    useEffect(() => {
+        const intervalId = setInterval(() => {
+            setEscolha(prevEscolha => {
+                const tabKeys = Object.keys(tabs);
+                const currentIndex = tabKeys.indexOf(prevEscolha);
+                const nextIndex = (currentIndex + 1) % tabKeys.length;
+                return tabKeys[nextIndex];
+            });
+        }, 5000); 
+
+        return () => clearInterval(intervalId);
+    }, [escolha]);
       
+    
+    
     return(
         <section>
             <div className={style.menu}>
@@ -26,7 +40,6 @@ export function Menu() {
             </div>
 
            {<Options optionSelected={tabs[escolha]}/>}
-           
         </section>
     )
 }

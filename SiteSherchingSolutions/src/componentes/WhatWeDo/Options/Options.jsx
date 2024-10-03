@@ -5,13 +5,28 @@ import imgLandingPages from "../../../assets/ImgLandingPages.svg"
 import imgUxUi from "../../../assets/ImgUxUi.svg"
 import Button from "../../../componentes/Button/Button"
 import style from "./Options.module.css"
+import { useState, useEffect } from "react"
 
+// eslint-disable-next-line react/prop-types
 function Options({optionSelected}) {
 
+    const [option, setOption] = useState(optionSelected)
+    
+    useEffect(() => {
+        setOption(optionSelected);
+    }, [optionSelected]);
 
-    console.log(optionSelected);
     
+    useEffect(() => {
+        const intervalId = setInterval(() => {
+            setOption(prevOption => (prevOption < 4 ? prevOption + 1 : 0));
+        }, 5000);
+
+        return () => clearInterval(intervalId);
+    }, [option]); 
+
     
+
     const optionBody = [
         {
             img: imgConsultoria,
@@ -43,23 +58,21 @@ function Options({optionSelected}) {
             subTitle: "Nossa equipe conta com profissionais qualificados para atender a todos os públicos.",
             body: "Adquirindo qualquer um de nossos serviços, você contará com profissionais qualificados na área de UX/UI, proporcionando qualidade, acessibilidade e facilidade para todos os seus clientes e funcionários."
         }
-
     ]
     
-      
-
+    
     return(
         <div className={style.options}>
             <figure>
-                <img src={optionBody[optionSelected].img} alt="imgConsultoria" className={style.imgOptions} />
+                <img src={optionBody[option].img} alt="imgConsultoria" className={style.imgOptions} />
             </figure>
             <div className={style.txtOptions}>
-                <h1>{optionBody[optionSelected].title}</h1>
+                <h1>{optionBody[option].title}</h1>
                 <h2>
-                    {optionBody[optionSelected].subTitle}
+                    {optionBody[option].subTitle}
                 </h2>
                 <p>
-                    {optionBody[optionSelected].body}
+                    {optionBody[option].body}
                 </p>
                 <Button className={style.btnSaibaMais}>SAIBA MAIS</Button>
             </div>
