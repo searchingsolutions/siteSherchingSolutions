@@ -40,8 +40,6 @@ export function Menu() {
             </div>
 
            {<Options optionSelected={tabs[escolha]}/>}
-           
-
         </section>
     )
 }
