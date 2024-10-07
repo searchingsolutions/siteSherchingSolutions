@@ -18,5 +18,12 @@
     .navBar{
         padding-top: 1rem;
     }
+
+    .btnHamburger{
+        background-color: transparent;
+        border: none;
+        color: #ffffff;
+        margin-right: 0.5rem;
+    }
 }
 

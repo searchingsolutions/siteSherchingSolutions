@@ -11,7 +11,9 @@ function OurProjects() {
 
             <div className="d-flex justify-content-center gap-5 mt-5">
                 <Card/>
-                <Card/>
+                <div className="d-none d-md-grid">
+                    <Card/>
+                </div>
             </div>
 
             <Button className={styles.btnVerMais} >

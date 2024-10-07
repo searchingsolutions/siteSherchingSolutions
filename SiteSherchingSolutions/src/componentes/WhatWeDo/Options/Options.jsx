@@ -63,14 +63,17 @@ function Options({optionSelected}) {
     
     return(
         <div className={style.options}>
-            <figure>
+            <figure className=" d-none d-md-grid">
                 <img src={optionBody[option].img} alt="imgConsultoria" className={style.imgOptions} />
             </figure>
             <div className={style.txtOptions}>
-                <h1>{optionBody[option].title}</h1>
-                <h2>
+                <h2>{optionBody[option].title}</h2>
+                <h3>
                     {optionBody[option].subTitle}
-                </h2>
+                </h3>
+                <figure className="d-grid d-md-none">
+                    <img src={optionBody[option].img} alt="imgConsultoria" className={style.imgOptions} />
+                </figure>
                 <p>
                     {optionBody[option].body}
                 </p>

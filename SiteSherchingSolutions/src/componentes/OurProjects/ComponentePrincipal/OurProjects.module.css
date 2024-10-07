@@ -33,6 +33,11 @@
     font-weight: 300;  
 }
 
+@media (max-width: 600px) {
+    .sectionContainer{
+        margin-top: 4rem;
+    }
+}
 
 
 

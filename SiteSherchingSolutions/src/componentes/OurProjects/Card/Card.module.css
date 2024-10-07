@@ -34,3 +34,20 @@
     margin: 0px 28px ;
     font-weight: 100;
 }
+
+@media (max-width: 415px) {
+   .card{
+        max-width: 263px;
+        max-height: 190px;
+   }
+
+   .imgCard{
+        max-width: 230.7px;
+        margin: 18px 18px 0px;
+    }
+
+    .boxFotter{
+        max-width: 230px;
+        font-size: 11px;
+    }
+}

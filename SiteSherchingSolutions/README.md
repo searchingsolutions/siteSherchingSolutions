@@ -13,3 +13,9 @@ mobile 375
 tablet 768
 note 1024
 desktop 1440
+
+@media (max-width: 600px) {
+   
+}
+
+87.72

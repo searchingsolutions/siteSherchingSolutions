@@ -5,7 +5,7 @@ import style from "./WhatWeDo.module.css"
 function WhatWeDo() {
     return(
         <section className={style.sectionWhatWeDo}>
-            <Button className={style.whatWeDo} >O que Fazemos?</Button>
+            <Button className={style.btnwhatWeDo} >O que Fazemos?</Button>
             <Menu/>
         </section>
     )
